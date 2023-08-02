@@ -1,6 +1,9 @@
-h1{
-    color: red;
+.myfirst{
+    font-size: 36px;
+    font-family: calibri;
+    font-style: oblique;
 }
-#para{
-    color: green;
+
+.gras{
+    font-weight: bolder;
 }
