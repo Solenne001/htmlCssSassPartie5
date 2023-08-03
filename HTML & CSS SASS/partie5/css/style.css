@@ -1,0 +1,51 @@
+.boite {
+  display: flex;
+  height: 1200px;
+  /*flex-direction: column; ligne droite*/
+  border: 1px solid black;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px; /*mets de l'espace dans les choses*/
+}
+.boite__1 {
+  height: 200px;
+  width: 200px;
+  background-color: green;
+}
+.boite__2 {
+  height: 200px;
+  width: 200px;
+  background-color: greenyellow;
+}
+.boite__3 {
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+}
+
+.custom1 {
+  font-style: italic;
+  color: red;
+  text-decoration: line-through;
+  font-size: 50px;
+}
+.custom2 {
+  font-style: oblique;
+  color: gray;
+  text-decoration: line-through;
+  font-size: 100px;
+}
+.custom3 {
+  font-style: italic;
+  color: maroon;
+  text-decoration: line-through;
+  font-size: 100px;
+}
+.custom4 {
+  font-style: oblique;
+  color: magenta;
+  text-decoration: line-through;
+  font-size: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
