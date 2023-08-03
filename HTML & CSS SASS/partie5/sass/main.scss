@@ -1,0 +1,61 @@
+@mixin myTestDecoration{
+    text-decoration: line-through;
+}
+
+@mixin myFs($fs){
+    font-size: $fs;
+}
+@mixin blocOptions($hw,$b){
+    height: $hw;
+    width: $hw;
+    background-color: $b;
+}
+
+
+.boite{
+    display: flex;
+    height: 1200px;
+    /*flex-direction: column; ligne droite*/
+    
+    border: 1px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;/*mets de l'espace dans les choses*/
+    &__1{
+        @include blocOptions(200px, green);
+       
+    }
+    &__2{
+        @include blocOptions(200px, greenyellow);
+       
+    }
+    &__3{
+        @include blocOptions(200px, yellow);
+    }
+}
+.custom{
+    &1{
+        font-style: italic;
+        color: red;
+        @include myTestDecoration();
+        @include myFs(50px);
+    }
+    &2{
+        font-style: oblique;
+        color: gray;
+        @include myTestDecoration();
+        @include myFs(100px);
+    }
+    &3{
+        font-style: italic;
+        color: maroon;
+        @include myTestDecoration();
+        @include myFs(100px);
+    }
+    &4{
+        font-style: oblique;
+        color: magenta;
+        @include myTestDecoration();
+        @include myFs(50px);
+    }
+}
